@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-box">
+        <h1>Ayushi Sharma</h1>
+        <p>B.Tech undergraduate in Computer Science with specialization in Gaming Technology. Passionate about game development, design, art and programming.</p>
+        <p>I possess a strong love for coding and a keen interest in the dynamic field of game development. My passion for creating video games has helped me to finish projects successfully, both on my own and with others. I have further strengthened my foundation in this fascinating field by delving into the nuances of game design, mechanics, and coding through these endeavors.
+            In addition to my technical knowledge, I have great leadership and team management abilities. I am capable of motivating and organizing work efficiently. In addition to enhancing my technical skills, these experiences have helped me develop the interpersonal skills necessary to promote a cooperative and effective work environment.
+</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+            <div class="experience">
+                <h3>Xbox Game CampAsia, Microsoft - Lead, Team Arturo</h3>
+                <p>Led an all-women team to create a 2D escape room game for Android, focusing on improved performance and engaging storytelling.</p>
+                <button class="btn" onclick="openModal('modal4')">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Trash Dash (Flutter, Dart)</h3>
+                <p>A web based game that gamifies ocean cleanup. Players collect virtual trash bags while learning about the harmful effects of waste.</p>
+                <button class="btn" onclick="openModal('modal1')">View More</button>
+            </div>
+            <div class="project">
+                <h3>Ocean Adventures (Unity)</h3>
+                <p>A 2D platformer game with pixel art aesthetics, offering a smooth and personalized gaming experience.</p>
+                <button class="btn" onclick="openModal('modal2')">View More</button>
+            </div>
+            <div class="project">
+                <h3>Cybernetics (Unity)</h3>
+                <p>A 3D choice based game where the player, a robot chooses options based on understanding which takes him ahead in the game.</p>
+                <button class="btn" onclick="openModal('modal5')">View More</button>
+            </div>
+            <div class="project">
+                <h3>Spectral Mage (Unity)</h3>
+                <p>A 2D, elemental game, where you're going to fight off several elemental enemies! Choose the right swords to deal more damage.</p>
+                <button class="btn" onclick="openModal('modal6')">View More</button>
+            </div>
+            <div class="project">
+                <h3>Krisis (Unreal Engine)</h3>
+                <p>A 3D first-person shooter game with an immersive zombie-themed narrative with waves of zombies to be fought off.</p>
+                <button class="btn" onclick="openModal('modal3')">View More</button>
+            </div>
+            <div class="project">
+                <h3>Eerie Enclaves (Unity)</h3>
+                <p>A 3D, first person escape room based game where the player is trapped in a dark room and has to find his way out!</p>
+                <button class="btn" onclick="openModal('modal7')">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                    <p>C/C++</p>
+                    <p>C#</p>
+                    <p>Java</p>
+                    <p>Python</p>
+                    <p>JavaScript</p>
+                    <p>HTML/CSS</p>
+                    <p>Flutter/Dart</p>
+            </div>
+            <div class="skill-category">
+                <h3>Technologies & Tools</h3>
+                    <p>Unity Engine</p>
+                    <p>Unreal Engine</p>
+                    <p>Android Studio</p>
+                    <p>Aseprite</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via social media or email for collaboration, opportunities, or just to connect!</p>
+        <div class="social-icons">
+            <a href="https://github.com/AyushiSharma0407" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/ayushiisharma" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:ayushis2018@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Trash Dash (Flutter, Dart)</h2>
+            <p>Trash Dash is a web-based game that gamifies ocean cleanup. Players collect 100 virtual trash bags while learning about the harmful effects of waste. The game includes pixel art assets and interactive elements that foster a sense of community responsibility. Real-time progress tracking and animated rewards encourage players to continue.</p>
+            
+            <!-- Add the clickable link here -->
+            <a href="https://diyamittal02.github.io/DiyaMittal02-DiyaMittal02.github.io/" target="_blank" class="play-link">Click to Play Game</a>
+            
+            <div class="modal-image-container">
+                <img src="images/Flutter1.png" alt="Trash Dash1 Screenshot" class="modal-image">
+                <img src="images/Flutter2.png" alt="Trash Dash2 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Ocean Adventures (Unity)</h2>
+            <p>Ocean Adventures is a 2D platformer game created in pixel art format.It offers a smooth and personalized gaming experience through thoughtful data storage and
+                retrieval mechanisms to improve user experience</p>
+            <a href="https://ayushisharma0407.itch.io/ocean-adventures" target="_blank" class="play-link">Click to View & Download Game</a>
+            
+            <div class="modal-image-container">
+                <img src="images/Ocean2.png" alt="Ocean2 Screenshot" class="modal-image">
+                <img src="images/Ocean3.png" alt="Ocean3 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Krisis (Unreal Engine)</h2>
+            <p>Krisis is a 3D first-person shooter game featuring a captivating zombie-themed narrative. Thorough optimization ensures smooth gameplay across different devices, and the engaging storyline keeps players hooked.</p>
+            <a href="https://ayushisharma0407.itch.io/krisis" target="_blank" class="play-link">Click to View & Download Game</a>
+            <div class="modal-image-container">
+                <img src="images/KrisisMainMenu.jpg" alt="Krisis1 Screenshot" class="modal-image">
+                <img src="images/Krisis1.png" alt="Krisis2 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Xbox Game CampAsia, Microsoft - Team Arturo</h2>
+            <p> • Set all of the game mechanics to be compatible with both PC and Mobile based systems and programmed the puzzles accordingly.</p>
+            <p> • Created the game art as the lead artist to make the game appealing to all age groups by adding a nostalgic and simplistic touch to the game. This project showcased leadership, creativity, and technical expertise.</p>
+            <a href="https://drive.google.com/file/d/1YsLOgWi1IgQ5-NfDiIt-5GJyg6fvZ_17/view?usp=sharing" target="_blank" class="play-link">Click to view trailer</a>
+            <div class="modal-image-container">
+                <img src="images/Spirits1.jpg" alt="Spirits1 Screenshot" class="modal-image">
+                <img src="images/Spirits2.jpg" alt="Spirits2 Screenshot" class="modal-image">
+            </div>
+            <div class="modal-image-container">
+                <img src="images/Spirits3.jpg" alt="Spirits3 Screenshot" class="modal-image">
+                <img src="images/Spirits4.jpg" alt="Spirits4 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Cybernetics (Unity)</h2>
+            <p>The game incorporates all the basic Unity modules to produce a 3D game with player movement, exploration of surroundings and choices that will determine the outcome of the game. For now, the player either wins the game or retries if correct options are not chosen and required score is not generated. </p>
+            <a href="https://youtu.be/EexuYzFGENA?si=TnZFFX9aHwhFzfZs" target="_blank" class="play-link">Click to view demo video</a>
+            
+            <div class="modal-image-container">
+                <img src="images/Cybernetics1.png" alt="Cyber1 Screenshot" class="modal-image">
+                <img src="images/Cybernetics2.png" alt="Cyber2 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Spectral Mage (Unity)</h2>
+            <p>You are Jack, a teeny-tiny ghost who finds himself stranded in the fields of the Afterlife. However, it seems that the path to Heaven isn't all roses and rainbows. The three elements - fire, water and earth have risen against you to stop you from achieving eternal salvation. Use the blessing of the Maker to fight these elemental spirits! </p>
+            <a href="https://romobtw.itch.io/spectral-mage-game" target="_blank" class="play-link">Click to Play Game</a>
+            
+            <div class="modal-image-container">
+                <img src="images/Spectral1.png" alt="Spectral1 Screenshot" class="modal-image">
+                <img src="images/Specral2.png" alt="Spectral2 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>Eerie Enclaves (Unity)</h2>
+            <p>An immersive and thrilling escape room game set in a mysterious and atmospheric environment. Players find themselves trapped within a room filled with puzzles, clues, and enemies waiting to be conquered! </p>
+            <a href="https://drive.google.com/file/d/1WVcNcSJqHtSWgqUe4VwNF6zS6s0DpFUl/view?usp=sharing" target="_blank" class="play-link">Click to View Demo</a>
+            
+            <div class="modal-image-container">
+                <img src="images/Eerie1.png" alt="Eerie1 Screenshot" class="modal-image">
+                <img src="images/Eerie2.png" alt="Eerie2 Screenshot" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer 
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f1; /* Soft light background */
+    color: #3c3c3c;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #6ba692; /* Darker pastel green */
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #549876; /* Darker mint green */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3c3c3c;
+}
+
+section {
+    margin: 50px 0;
+}
+
+/* About Section */
+.about-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 50px auto;
+    width: 90%; /* Adjust width based on design preference */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-box h2 {
+    text-align: center;
+    color: #6ba692; /* Darker pastel green to match theme */
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increase line height for better readability */
+    color: #3c3c3c;
+}
+
+/* Project & Experience Sections */
+.project-list, .experience-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project, .experience {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.project:hover, .experience:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project h3, .experience h3 {
+    color: #6ba692; /* Darker pastel green */
+    margin-bottom: 10px;
+}
+
+.project .btn, .experience .btn {
+    background-color: #549876; /* Dark mint green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.project .btn:hover, .experience .btn:hover {
+    background-color: #46886e; /* Slightly darker mint */
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skill-category {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Contact Section - Social Icons */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 2rem; /* Increased size */
+    color: #3c3c3c;
+    transition: color 0.3s, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #549876; /* Darker mint green hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-image {
+    width: 48%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
