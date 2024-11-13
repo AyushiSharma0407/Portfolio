@@ -57,20 +57,20 @@ section {
     border: 1px solid #ddd;
     padding: 30px;
     margin: 50px auto;
-    width: 90%; /* Adjust width based on design preference */
+    width: 90%;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 .about-box h2 {
     text-align: center;
-    color: #6ba692; /* Darker pastel green to match theme */
+    color: #6ba692;
     margin-bottom: 20px;
 }
 
 .about-box p {
     margin-bottom: 20px;
-    line-height: 1.8; /* Increase line height for better readability */
+    line-height: 1.8;
     color: #3c3c3c;
 }
 
@@ -98,12 +98,12 @@ section {
 }
 
 .project h3, .experience h3 {
-    color: #6ba692; /* Darker pastel green */
+    color: #6ba692;
     margin-bottom: 10px;
 }
 
 .project .btn, .experience .btn {
-    background-color: #549876; /* Dark mint green */
+    background-color: #549876;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -113,7 +113,7 @@ section {
 }
 
 .project .btn:hover, .experience .btn:hover {
-    background-color: #46886e; /* Slightly darker mint */
+    background-color: #46886e;
 }
 
 /* Skills Section */
@@ -141,16 +141,15 @@ section {
 
 .social-icons a {
     margin: 0 10px;
-    font-size: 2rem; /* Increased size */
+    font-size: 2rem;
     color: #3c3c3c;
     transition: color 0.3s, transform 0.2s ease;
 }
 
 .social-icons a:hover {
-    color: #549876; /* Darker mint green hover */
-    transform: scale(1.2); /* Slightly enlarge on hover */
+    color: #549876;
+    transform: scale(1.2);
 }
-
 
 /* Modal Styles */
 .modal {
@@ -202,3 +201,66 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-box {
+        width: 100%;
+    }
+
+    .project, .experience {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-image {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .project .btn, .experience .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    }
